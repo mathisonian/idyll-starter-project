@@ -3,16 +3,12 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "idyll index.idl --defaultComponents=components/default --css styles.css --theme github --layout centered --watch",
-    "build": "idyll index.idl --defaultComponents=components/default --theme github --css styles.css --layout centered; cp -r {images,fonts} public/;",
-    "deploy": "npm run build && gh-pages -d ./build"
+    "start": "idyll index.idl --css styles.css --theme github --layout centered --watch",
+    "build": "idyll index.idl --theme github --css styles.css --layout centered; cp -r {images,fonts} public/;"
   },
   "dependencies": {
     "idyll": "^2.0.0",
     "idyll-d3-component": "^2.0.0",
     "d3": "^4.0.0"
-  },
-  "devDependencies": {
-    "gh-pages": "^0.12.0"
   }
 }

@@ -10,6 +10,8 @@ This is an Idyll file. Write text
 as you please in here. To add interactivity,
 you can add  different components to the text.
 
+See [https://idyll-lang.org/docs/components](https://idyll-lang.org/docs/components) for a list of available components.
+
 Here is how you can use a variable:
 
 [var name:"exampleVar" value:5 /]
@@ -33,7 +35,7 @@ doesn't exist.
 
 [var name:"state" value:0 /]
 
-[CustomD3Component onEnterViewFully:` state += 1` state:state /]
+[CustomD3Component onEnterViewFully:`state++` state:state /]
 [button onClick:`state++`]
   Click Me.
 [/button]
